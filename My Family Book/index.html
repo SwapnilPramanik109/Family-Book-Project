@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <title>My Family Book</title>
+    <body>
+        <h1 id="h1header">My Family Book</h1>
+        <img id  = "image1"src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2l4nQMb8AIR7-Az7xmwgGYpGNeUYB-DIZzg&usqp=CAU">
+        <p id="Family">My Family</p>
+        <button type="button" onclick="nextslide()"> Next </button>
+    </body>
+    <script>
+var names = ["Reena Pramanik, My Mother" , "Raja Pramanik, my father" , "Swapnil Pramanik, me"];
+var images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwH1iLB5IueMwvfw6mLQBtkyB-8kZQ4E0M7A&usqp=CAU" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPscZPpPlnfBVDCg7ozg7afES_vFa31weCdA&usqp=CAU" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSai34lt5UJk0blLZCfGOlMMRY35ygtlCZC-Q&usqp=CAU"];
+var j=0;
+
+var arrayvalueimages = "";
+    for (i = 0; i < images.length; i++) {
+        array_value = array_value + images[i] + "<br>";}
+       
+ var arrayvaluenames = "";
+    for (i = 0; i < images.length; i++) {
+        array_value = array_value + images[i] + "<br>";
+        var array_value = "";}
+
+function nextslide(){
+  document.getElementById("image1").src=images[j];
+  document.getElementById("Family").innerHTML=names[j];
+  j++;
+}
+    </script>
+</html>
